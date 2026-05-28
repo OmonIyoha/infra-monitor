@@ -8,7 +8,7 @@ def write_log(message):
     with open(LOG_FILE, "a") as f:
         f.write(message + "\n")
 
-while True:
+for i in range(5)::
 
     cpu = psutil.cpu_percent()
     memory = psutil.virtual_memory().percent
